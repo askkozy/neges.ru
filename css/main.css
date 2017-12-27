@@ -104,9 +104,7 @@ nav li a:focus {
 #services {
     width: 100%;
     text-align: center;
-    display: grid;
-    grid-template-rows: 200px, 3fr;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    
 }
 
 #services h3 {
@@ -154,11 +152,7 @@ nav li a:focus {
 #other {
     background-color: #f7f7f7;
     width: 100%;
-    display: grid;
-    grid-template-areas: 
-        "heading heading bag"
-        "item1 item2 bag"
-        "item3 item4 bag";
+   
 }
 
 .other_heading {
@@ -168,31 +162,16 @@ nav li a:focus {
     font-family: "Jura", sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
-    grid-area: heading;
+   
 }
 
 .bag {
     background: url("../img/side.jpg") no-repeat left;
     background-size: cover;
     min-height: 600px;
-    width: 30%;
-    grid-area: bag;
+    width: 300px;
+ 
 }
-
-.grdItm1 {
-     grid-area: item1;
-}
-.grdItm2 {
-     grid-area: item2;
-    
-}
-.grdItm3 {
-     grid-area: item3;
-}
-.grdItm4 {
-     grid-area: item4;
-}
-
 
 /*********Extras Icons*********/
 
@@ -223,6 +202,7 @@ margin-left: 30px;
 } .young h3 {
     margin-left: 20px;
 }
+
 
 .young:hover {
     background: url("../img/icons/024.png") no-repeat left;
@@ -510,241 +490,8 @@ p {
     cursor: pointer;
     display: none;
     color: #fff;
-    font-family: verdana;
+    font-family: serif;
     font-size: 1.7rem;
     border-radius: 100%;
 }
 
-/*******Media Queries********/
-
-@media (max-width: 480px) {
-    .bag {
-       
-    }
-    .extra {
-        width: 100%;
-        float: none;
-    }
-
-    nav li {
-        display: none;
-    }
-    .text {
-        width: 80%;
-    }
-    .money {
-        width: 80%;
-    }
-    .product_container {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .btm_line_price p {
-        width: 80%;
-    }
-    .team_cont .col-xs-4 {
-        display: inline-block;
-        width: 100%;
-    }
-    .heading_team {
-        font-size: 3rem;
-    }
-    
-     .services h2 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .services{
-        float: none;
-        display: block;
-        width: 100%;
-    }
-    
-    .services h2 {
-        font-size: 2rem;
-    }
-    .bag {
-       
-    }
-    header p {
-        display: none;
-    }
-    #logo {
-        display: block;
-        text-align: center;
-    }
-    .extra {
-        width: 100%;
-    }
-    .other_heading {
-        width: 100%;
-    }
-    .products_heading {
-        width: 90%;
-        padding-bottom: 100px;
-        text-align: center;
-    }
-
-    .btm_line_price p {
-        width: 80%;
-    }
-    .team_wrap {
-        width: 100%;
-    }
-    .team {
-        width: 100%;
-    }
-    .koz,
-    .yz,
-    .mk {
-        display: block;
-        float: none;
-    }
-    /*
-    .koz, .yz, .mk{/*
-        display: block;
-        width: 100%;
-        float:none;
-        margin-left: 30px;
-        
-    }*/
-}
-
-@media (max-width: 1080px) {
-    nav {
-        float: none;
-        width: 100%;
-    }
-
-    #logo {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    header p {
-        margin-top: 0;
-    }
-    header h3 {
-        margin-bottom: 0;
-    }
-    .bag {
-        
-    }
-    .extra {
-        width: 100%;
-    }
-    
-    .heading {
-    display: grid;
-    grid-row: 1;
-    grid-column: span 3;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 2rem;
-    margin-top: 2%;
-    font-family: "Jura", sans-serif;
-
-    min-height: 200px;
-
-}
-
-.heading h2 {
-    font-size: 3rem;
-}
-
-.services {
-    display: flex;
-    width: 100vw;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    align-self: center;
-    flex-wrap:wrap;
-    
-
-}
-
-.gridItem1,
-.gridItem2,
-.gridItem3 {
-    margin: 0 10px 10px 10px;
-}
-
-.gridItem1 {
-    grid-column: 1/2;
-}
-
-.gridItem2 {
-    grid-column: 2/3;
-}
-
-.gridItem3 {
-    grid-column: 3/4;
-}
-}
-
-@media (min-width: 1080px) {
-    .bag {
-
-    }
-    .extra {
-        width: 70%;
-        float: left;
-    }
-    nav {
-        max-height: 80px;
-        max-width: 70%;
-        margin-top: -80px;
-    }
-    .team_cont img {
-        border-radius: 100%;
-        height: 200px;
-        width: 200px;
-        border: 2px solid #35c2f8;
-    }
-    .heading {
-    display: grid;
-    grid-row: 1;
-    grid-column: span 3;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 3rem;
-    margin-top: 2%;
-    font-family: "Jura", sans-serif;
-
-    min-height: 200px;
-
-}
-
-.heading h2 {
-    font-size: 3rem;
-}
-
-.services {
-    display: grid;
-    width: 100vw;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    align-self: center;
-
-}
-
-.gridItem1,
-.gridItem2,
-.gridItem3 {
-    margin: 0 10px 10px 10px;
-}
-
-.gridItem1 {
-    grid-column: 1/2;
-}
-
-.gridItem2 {
-    grid-column: 2/3;
-}
-
-.gridItem3 {
-    grid-column: 3/4;
-}
-}
