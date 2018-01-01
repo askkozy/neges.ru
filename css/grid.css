@@ -1,6 +1,6 @@
 /***Services Block***/
 
-#services {
+.services {
     display: grid;
     grid-template-rows: 200px, 3fr;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -38,26 +38,53 @@
 .grdItm4 {
     grid-area: item4;
 }
+.product_container {
+    display: grid;
+    grid-template-areas: 
+    "heading heading"
+    "productItem1 productItem2"
+    "productItem3 productItem4"
+    "product_footer product_footer";
+}
+.description {
+    grid-area: heading;
+}
+.productItem1 {
+    grid-area: productItem1;
+}
+.productItem2 {
+    grid-area: productItem2;
+}
+.productItem3 {
+    grid-area: productItem3;
+}
+.productItem4 {
+    grid-area: productItem4;
+}
+.product_footer {
+    grid-area: product_footer;
+}
 
 /***Media Queries***/
 
-@media (max-width: 600px) {
+@media (max-width: 880px) {
 
     .heading {
-        display: grid;
+        /* display: grid;
         grid-row: 1;
-        grid-column: span 3;
+        grid-column: span 3; */
     }
     .services {
-        display: flex;
+        display: grid;
         width: 95vw;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, minmax(100px, 1fr));
     }
 
     .gridItem1 p,
     .gridItem2 p,
     .gridItem3 p {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
 
@@ -68,34 +95,67 @@
     }
 
     .gridItem1 {
-        grid-column: 1/2;
+        grid-row: 1;
     }
 
     .gridItem2 {
-        grid-column: 2/3;
+        grid-row: 2;
     }
 
     .gridItem3 {
-        grid-column: 3/4;
+        grid-row: 3;
+        
     }
+    /*Grid for small devices - id other*/
+    #other {
+        display: grid;
+        grid-template-areas: 
+        "heading" 
+        "item1" 
+        "item2"
+        "item3"
+        "item4";
+    }
+    .other_heading {
+        
+            grid-area: heading;
+        }
+       
+    .grdItm1 {
+        grid-area: item1;
+    }
+    
+    .grdItm2 {
+        grid-area: item2;
+    
+    }
+    
+    .grdItm3 {
+        grid-area: item3;
+    }
+    
+    .grdItm4 {
+        grid-area: item4;
 }
 
 @media (min-width: 600px) and (max-width: 1080px) {
-    .heading {
+   #services {
+       display: grid;
+       grid-template-areas: 
+       "heading"
+       ""
+   }
+    .services {
         display: grid;
+        width: 95vw;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+        
+    }
+    .heading {
         grid-row: 1;
         grid-column: span 3;
-
     }
-    .services {
-        display: flex;
-        width: 95vw;
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
-        align-self: center;
-        flex-wrap: wrap;
-    }
-
     .gridItem1,
     .gridItem2,
     .gridItem3 {
@@ -103,14 +163,48 @@
     }
 
     .gridItem1 {
-        grid-column: 1/2;
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
 
     .gridItem2 {
         grid-column: 2/3;
+        grid-row: 2/3;
     }
 
     .gridItem3 {
-        grid-column: 3/4;
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
+}
+.cont_methods {
+    display: grid;
+    grid-template-areas: 
+    "phoneIcon phoneContainer"
+    "phoneIcon phoneContainer"
+    "line line"
+    "emailIcon emailContainer"
+    "emailIcon emailContainer";
+    padding: 20px;
+
+}
+.mobile {
+    grid-area: phoneIcon;
+}
+
+.mail {
+    grid-area: emailIcon;
+}
+
+.phoneContainer {
+    grid-area: phoneContainer;
+}
+
+.emailContainer {
+    grid-area: emailContainer;
+}
+
+
+.cont_methods hr {
+    grid-area: line;
 }

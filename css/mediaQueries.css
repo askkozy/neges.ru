@@ -1,179 +1,231 @@
 /*******Media Queries********/
 
 @media (max-width: 480px) {
-    .bag {
-       display:none;
-    }
-    .extra {
-        width: 100%;
-        float: none;
-    }
+  .bag {
+    display: none;
+  }
+  .extra {
+    width: 100%;
+    float: none;
+  }
 
-    .text {
-        width: 80%;
-    }
-    .money {
-        width: 80%;
-    }
-    .product_container {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .btm_line_price p {
-        width: 80%;
-    }
-    .team_cont {
-        display: inline-block;
-        width: 100%;
-    }
-    .heading_team {
-        font-size: 3rem;
-    }
-    
-     .services h2 {
-        font-size: 2rem;
-    }
-    
-    
+  .text {
+    width: 80%;
+  }
+  .money {
+    width: 80%;
+  }
+  .product_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btm_line_price p {
+    width: 80%;
+  }
+  .team_cont {
+    display: inline-block;
+    width: 100%;
+  }
+  .heading_team {
+    font-size: 3rem;
+  }
+
+  .services h2 {
+    font-size: 3rem;
+  }
+  .contact {
+    width: 100vw;
+  }
+  .contact h1 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 600px) {
+  .heading h2 {
+    font-size: 2rem;
+    word-wrap: normal;
+  }
+  .bag {
+    display: none;
+  }
+  header p {
+    display: none;
+  }
+  #logo {
+    display: block;
+    text-align: center;
+  }
+  .extra {
+    width: 100%;
+  }
+  .other_heading {
+    width: 100%;
+  }
+  .products_heading {
+    width: 90%;
+    padding-bottom: 100px;
+    text-align: center;
+  }
 
+  .btm_line_price p {
+    width: 80%;
+  }
+  .team_wrap {
+    width: 100%;
+  }
+  .team {
+    width: 100%;
+  }
 
-    .heading h2 {
-        font-size: 2rem;
-        word-wrap: normal;
-    }
-    .bag {
-       display:none;
-    }
-    header p {
-        display: none;
-    }
-    #logo {
-        display: block;
-        text-align: center;
-    }
-    .extra {
-        width: 100%;
-    }
-    .other_heading {
-        width: 100%;
-    }
-    .products_heading {
-        width: 90%;
-        padding-bottom: 100px;
-        text-align: center;
-    }
-
-    .btm_line_price p {
-        width: 80%;
-    }
-    .team_wrap {
-        width: 100%;
-    }
-    .team {
-        width: 100%;
-    }
-    .koz,
-    .yz,
-    .mk {
-        display: block;
-        float: none;
-    }
-    /*
-    .koz, .yz, .mk{/*
-        display: block;
-        width: 100%;
-        float:none;
-        margin-left: 30px;
-        
-    }*/
-    
-        .heading {
+  .heading {
     text-align: center;
     text-transform: capitalize;
-    font-size: 2rem;
     margin-top: 2%;
     font-family: "Jura", sans-serif;
     width: 95vw;
     min-height: 200px;
+  }
 
-}
-
-.heading h2 {
+  .heading h2 {
     font-size: 2rem;
     word-wrap: normal;
+  }
+
+  .services p {
+    font-size: 1.3rem;
+  }
+  .contact {
+    width: 100vw;
+  }
+  .contact h1 {
+    font-size: 2rem;
+  }
+  .products_heading {
+    font-size: 1.5rem;
+  }
+  #products h1 {
+    font-size: 2.3rem;
+  }
+  #products p {
+    font-size: 1.1rem;
+  }
+
+  .product_container {
+    display: grid;
+    grid-template-areas:
+      "heading"
+      "productItem1"
+      "productItem2"
+      "productItem3"
+      "productItem4"
+      "product_footer";
+  }
+  .description {
+    grid-area: heading;
+  }
+  .productItem1 {
+    grid-area: productItem1;
+  }
+  .productItem2 {
+    grid-area: productItem2;
+  }
+  .productItem3 {
+    grid-area: productItem3;
+  }
+  .productItem4 {
+    grid-area: productItem4;
+  }
+  .product_footer {
+    grid-area: product_footer;
+  }
 }
-    
 
+@media (min-width: 600px) and (max-width: 880px) {
+  nav {
+    float: none;
+    width: 100%;
+  }
 
-    .services p {
-        font-size: 1.3rem;
-    }
-    
-   
-}
+  #logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  header p {
+    margin-top: 0;
+  }
+  header h3 {
+    margin-bottom: 0;
+  }
+  .bag {
+    display: none;
+  }
+  .extra {
+    width: 100%;
+  }
 
-@media (min-width: 600px) and (max-width: 1080px) {
-    nav {
-        float: none;
-        width: 100%;
-    }
-
-    #logo {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    header p {
-        margin-top: 0;
-    }
-    header h3 {
-        margin-bottom: 0;
-    }
-    .bag {
-        display:none;
-    }
-    .extra {
-        width: 100%;
-    }
-    
-    .heading {
+  .heading {
     text-align: center;
     text-transform: capitalize;
     font-size: 2rem;
     margin-top: 2%;
     font-family: "Jura", sans-serif;
     min-height: 200px;
-}
+  }
 
-.heading h2 {
+  .heading h2 {
     font-size: 3rem;
-}
-
+  }
+  .product_container {
+    display: grid;
+    grid-template-areas:
+      "heading"
+      "productItem1"
+      "productItem2"
+      "productItem3"
+      "productItem4"
+      "product_footer";
+  }
+  .description {
+    grid-area: heading;
+  }
+  .productItem1 {
+    grid-area: productItem1;
+  }
+  .productItem2 {
+    grid-area: productItem2;
+  }
+  .productItem3 {
+    grid-area: productItem3;
+  }
+  .productItem4 {
+    grid-area: productItem4;
+  }
+  .product_footer {
+    grid-area: product_footer;
+  }
 }
 
 @media (min-width: 1080px) {
-    .bag {
-
-    }
-    .extra {
-        width: 70%;
-        float: left;
-    }
-    nav {
-        max-height: 80px;
-        max-width: 70%;
-        margin-top: -80px;
-    }
-    .team_cont img {
-        border-radius: 100%;
-        height: 200px;
-        width: 200px;
-        border: 2px solid #35c2f8;
-    }
-    .heading {
+  .bag {
+  }
+  .extra {
+    width: 70%;
+    float: left;
+  }
+  nav {
+    max-height: 80px;
+    max-width: 70%;
+    margin-top: -80px;
+  }
+  .team_cont img {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    border: 2px solid #35c2f8;
+  }
+  .heading {
     display: grid;
     grid-row: 1;
     grid-column: span 3;
@@ -184,38 +236,36 @@
     font-family: "Jura", sans-serif;
 
     min-height: 200px;
+  }
 
-}
-
-.heading h2 {
+  .heading h2 {
     font-size: 3rem;
-}
+  }
 
-.services {
+  .services {
     display: grid;
     width: 95vw;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     align-self: center;
     margin: 0 auto;
+  }
 
-}
-
-.gridItem1,
-.gridItem2,
-.gridItem3 {
+  .gridItem1,
+  .gridItem2,
+  .gridItem3 {
     margin: 0 10px 10px 10px;
-}
+  }
 
-.gridItem1 {
+  .gridItem1 {
     grid-column: 1/2;
-}
+  }
 
-.gridItem2 {
+  .gridItem2 {
     grid-column: 2/3;
-}
+  }
 
-.gridItem3 {
+  .gridItem3 {
     grid-column: 3/4;
-}
+  }
 }

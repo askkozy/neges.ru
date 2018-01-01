@@ -4,9 +4,12 @@
   box-sizing: border-box;
   margin: 0 auto;
 }
-
+p {
+  font-size: 1.2rem;
+}
 body {
   font-size: 14px;
+  --blue-color: #35c2f8;
 }
 
 #wrap {
@@ -15,7 +18,6 @@ body {
 
 div {
   display: inline-block;
-  background-color: #51a9cc;
 }
 
 img {
@@ -60,7 +62,7 @@ nav {
 }
 
 .active {
-  color: #35c2f8;
+  color: var(--blue-color);
 }
 
 nav li {
@@ -81,12 +83,12 @@ nav li a:hover {
   color: #fff;
   border-bottom: none;
   background-clip: border-box;
-  background-color: #35c2f8;
+  background-color: var(--blue-color);
   text-decoration: none;
 }
 
 nav li a:focus {
-  color: #35c2f8;
+  color: var(--blue-color);
   text-decoration: none;
 }
 
@@ -118,6 +120,12 @@ nav li a:focus {
   font-family: "Philosopher", sans-serif;
 }
 
+.grdItm1,
+.grdItm2,
+.grdItm3,
+.grdItm4 {
+  padding: 10px;
+}
 .heading h2 {
   word-wrap: normal;
 }
@@ -239,6 +247,8 @@ nav li a:focus {
   width: 100%;
   background: url("../img/ipad.png") no-repeat right fixed;
   background-position: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 #products h1 {
@@ -252,54 +262,38 @@ nav li a:focus {
 
 .product_container {
   width: 80%;
-  margin: 0 10% 0 10%;
+  margin: 3% auto;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: #000 0px 0px 10px 0px;
-  overflow: hidden;
-  clear: both;
   border-radius: 20px;
-  margin-bottom: 100px;
 }
 
-.text {
-  padding-left: 70px;
-  font-size: 1.7rem;
-  padding-bottom: 20px;
-  padding-right: 10px;
-  min-height: 310px;
-  max-height: 400px;
+.description {
+  margin: 30px;
+  font-size: 1.2rem;
 }
 
-/********Bottom Two Products*********/
-
-.t_1 {
-  min-height: 150px;
+.product_footer {
+  margin: 30px;
 }
 
-.description h3 {
-  text-align: center;
-  clear: both;
-  width: 80%;
-  padding-bottom: 20px;
-  font-family: "Philosopher", serif;
+.productItem1,
+.productItem2,
+.productItem3,
+.productItem4 {
+  margin: 30px;
 }
 
-/**********Bottom Line About Prices**********/
-
-p a {
-  display: inline;
+.product_item_heading {
+  font-size: 1.5rem;
 }
 
-p {
-  display: inline-block;
+.productItem1.text,
+.productItem2.text,
+.productItem3.text,
+.productItem4.text {
+  font-size: 1.2rem;
 }
-
-.btm_line_price {
-  width: 100%;
-  padding: 30px;
-  margin: auto;
-}
-
 /**********Icons**********/
 
 .landing {
@@ -348,7 +342,6 @@ p {
 .landing {
   padding: 0 50px;
   margin-left: 20px;
-  clear: both;
   font-size: 2rem;
   padding-bottom: 20px;
 }
@@ -359,12 +352,12 @@ p {
   padding: 2%;
   width: auto;
   font-size: 2.5rem;
-  border: 2px solid #35c2f8;
+  border: 2px solid var(--blue-color);
   border-radius: 10px;
 }
 
 .price:hover {
-  background-color: #35c2f8;
+  background-color: var(--blue-color);
   color: #fff;
 }
 
@@ -405,7 +398,7 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  border: 2px solid #35c2f8;
+  border: 2px solid var(--blue-color);
 }
 
 .ny {
@@ -414,7 +407,7 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  border: 2px solid #35c2f8;
+  border: 2px solid var(--blue-color);
 }
 
 .mk {
@@ -423,7 +416,7 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  border: 2px solid #35c2f8;
+  border: 2px solid var(--blue-color);
 }
 
 .btm_line_team {
@@ -483,7 +476,7 @@ p {
 
 #toTop {
   width: 35px;
-  background: #35c2f8;
+  background: var(--blue-color);
   color: #fff;
   text-align: center;
   padding: 5px;
