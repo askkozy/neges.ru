@@ -1,50 +1,51 @@
 /*******General Styles********/
 
 * {
-    box-sizing: border-box;
-    margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 body {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #wrap {
-    width: 100%;
+  width: 100%;
 }
 
 div {
-    display: inline-block;
+  display: inline-block;
+  background-color: #51a9cc;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /****** Header ******/
 
 header {
-    background: url(../img/header_purple.png) no-repeat center;
-    background-size: cover;
-    height: 645px;
-    font-size: 1.7rem;
+  background: url(../img/header_purple.png) no-repeat center;
+  background-size: cover;
+  height: 645px;
+  font-size: 1.7rem;
 }
 
 .line {
-    background: url(../img/underline.png) center no-repeat;
-    width: 211px;
-    text-align: center;
-    display: block;
-    padding-bottom: 50px;
+  background: url(../img/underline.png) center no-repeat;
+  width: 211px;
+  text-align: center;
+  display: block;
+  padding-bottom: 50px;
 }
 
 header h1,
 header h3,
 header p {
-    color: #fff;
-    text-align: center;
-    margin: 50px;
-    font-family: "Lora", serif;
+  color: #fff;
+  text-align: center;
+  margin: 50px;
+  font-family: "Lora", serif;
 }
 
 /****Navigation Menu****
@@ -92,85 +93,79 @@ nav li a:focus {
 /****Logo****/
 
 #logo {
-    color: #fff;
-    font-size: 5rem;
-    font-family: "Arizonia", cursive;
-    margin-left: 2%;
-    font-weight: 600;
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Arizonia", cursive;
+  margin-left: 2%;
+  font-weight: 600;
 }
 
 /*****Services Block*****/
 
 #services {
-    width: 100%;
-    text-align: center;
-    
+  width: 100%;
+  text-align: center;
 }
 
 #services h3 {
-    font-size: 2rem;
-    color: darkslategray;
-    text-transform: uppercase;
+  font-size: 2rem;
+  color: darkslategray;
+  text-transform: uppercase;
 }
 
 #services p {
-    font-size: 1.5rem;
-    font-family: "Philosopher", sans-serif;
+  font-size: 1.5rem;
+  font-family: "Philosopher", sans-serif;
 }
-
 
 .heading h2 {
-    word-wrap: normal;
+  word-wrap: normal;
 }
-
 
 /*******Icons for the Services Page********/
 
 .tools {
-    background: url("../img/tools_ico.png") no-repeat center;
-    background-size: cover;
-    width: 62px;
-    height: 55px;
+  background: url("../img/tools_ico.png") no-repeat center;
+  background-size: cover;
+  width: 62px;
+  height: 55px;
 }
 
 .web {
-    background: url("../img/flow-tree_ico.png") no-repeat center;
-    background-size: cover;
-    height: 55px;
-    width: 55px;
+  background: url("../img/flow-tree_ico.png") no-repeat center;
+  background-size: cover;
+  height: 55px;
+  width: 55px;
 }
 
 .supp {
-    background: url("../img/lifesaver_ico.png") no-repeat center;
-    background-size: cover;
-    height: 55px;
-    width: 55px;
+  background: url("../img/lifesaver_ico.png") no-repeat center;
+  background-size: cover;
+  height: 55px;
+  width: 55px;
 }
 
 /**********Extras***********/
 
 #other {
-    background-color: #f7f7f7;
-    width: 100%;
-   
+  background-color: #f7f7f7;
+  width: 100%;
 }
 
 .other_heading {
-    width: 70%;
-    text-align: center;
-    margin-top: 3%;
-    font-family: "Jura", sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-   
+  width: 70%;
+  text-align: center;
+  margin-top: 3%;
+  font-family: "Jura", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .bag {
-    background: url("../img/side.jpg") no-repeat left;
-    background-size: cover;
-    min-height: 600px;
-    width: 300px;
- 
+  background: url("../img/side.jpg") no-repeat left;
+  background-size: cover;
+  min-height: 600px;
+  width: 300px;
 }
 
 /*********Extras Icons*********/
@@ -179,161 +174,170 @@ nav li a:focus {
 .content,
 .individual,
 .dynamic {
-    display: inline-block;
-    padding-left: 50px;
+  display: inline-block;
+  padding-left: 50px;
 }
 
 .p1 p {
-    font-size: 1.4em;
-    padding-left: 50px;
+  font-size: 1.4em;
+  padding-left: 50px;
 }
 
 /***************Glyphs and glyphs - hover**************/
-.young, .dynamic, .content, .individual {
-    padding: 15px;
+.young,
+.dynamic,
+.content,
+.individual {
+  padding: 15px;
 }
 
-.young h3, .dynamic h3, .content h3, .individual h3 {
-margin-left: 30px;
+.young h3,
+.dynamic h3,
+.content h3,
+.individual h3 {
+  margin-left: 30px;
 }
 .young {
-    background: url("../img/icons/024-1.png") no-repeat left;
-    
-} .young h3 {
-    margin-left: 20px;
+  background: url("../img/icons/024-1.png") no-repeat left;
+}
+.young h3 {
+  margin-left: 20px;
 }
 
-
 .young:hover {
-    background: url("../img/icons/024.png") no-repeat left;
+  background: url("../img/icons/024.png") no-repeat left;
 }
 
 .dynamic {
-    background: url("../img/icons/017-1.png") no-repeat left;
+  background: url("../img/icons/017-1.png") no-repeat left;
 }
 
 .dynamic:hover {
-    background: url("../img/icons/017.png") no-repeat left;
+  background: url("../img/icons/017.png") no-repeat left;
 }
 
 .content {
-    background: url("../img/icons/053-1.png") no-repeat left;
+  background: url("../img/icons/053-1.png") no-repeat left;
 }
 
 .content:hover {
-    background: url("../img/icons/053.png") no-repeat left;
+  background: url("../img/icons/053.png") no-repeat left;
 }
 
 .individual {
-    background: url("../img/icons/035-1.png") no-repeat left;
+  background: url("../img/icons/035-1.png") no-repeat left;
 }
 
 .individual:hover {
-    background: url("../img/icons/035.png") no-repeat left;
+  background: url("../img/icons/035.png") no-repeat left;
 }
 
 /************Products Section************/
 
 #products {
-    min-height: 700px;
-    width: 100%;
-    background: url("../img/ipad.png") no-repeat right fixed;
-    background-position: fixed;
+  min-height: 700px;
+  width: 100%;
+  background: url("../img/ipad.png") no-repeat right fixed;
+  background-position: fixed;
 }
 
 #products h1 {
-    text-align: center;
-    font-size: 5rem;
-    font-family: "Jura", sans-serif;
-    font-weight: 600;
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
 }
 
 /************Products Section**************/
 
 .product_container {
-    width: 80%;
-    margin: 0 10% 0 10%;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: #000 0px 0px 10px 0px;
-    overflow: hidden;
-    clear: both;
-    border-radius: 20px;
-    margin-bottom: 100px;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: #000 0px 0px 10px 0px;
+  overflow: hidden;
+  clear: both;
+  border-radius: 20px;
+  margin-bottom: 100px;
 }
 
 .text {
-    padding-left: 70px;
-    font-size: 1.7rem;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    min-height: 310px;
-    max-height: 400px;
+  padding-left: 70px;
+  font-size: 1.7rem;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  min-height: 310px;
+  max-height: 400px;
 }
 
 /********Bottom Two Products*********/
 
 .t_1 {
-    min-height: 150px;
+  min-height: 150px;
 }
 
 .description h3 {
-    text-align: center;
-    clear: both;
-    width: 80%;
-    padding-bottom: 20px;
-    font-family: "Philosopher", serif;
+  text-align: center;
+  clear: both;
+  width: 80%;
+  padding-bottom: 20px;
+  font-family: "Philosopher", serif;
 }
 
 /**********Bottom Line About Prices**********/
 
 p a {
-    display: inline;
+  display: inline;
 }
 
 p {
-    display: inline-block;
+  display: inline-block;
 }
 
 .btm_line_price {
-    width: 100%;
-    padding: 30px;
-    margin: auto;
+  width: 100%;
+  padding: 30px;
+  margin: auto;
 }
 
 /**********Icons**********/
 
 .landing {
-    background: url("../img/icons/eldorado/devices/002.png") no-repeat center left;
+  background: url("../img/icons/eldorado/devices/002.png") no-repeat center left;
 }
 
 .i_shop {
-    background: url("../img/icons/eldorado/basic/046.png") no-repeat center left;
+  background: url("../img/icons/eldorado/basic/046.png") no-repeat center left;
 }
 
 .bs_card {
-    background: url("../img/icons/eldorado/basic/003.png") no-repeat center left;
+  background: url("../img/icons/eldorado/basic/003.png") no-repeat center left;
 }
 
 .corporate {
-    background: url("../img/icons/eldorado/finance/016.png") no-repeat center left;
+  background: url("../img/icons/eldorado/finance/016.png") no-repeat center left;
 }
 
 /**********Icons Hover**********/
 
 .landing:hover {
-    background: url("../img/icons/eldorado_stroke/devices/002.png") no-repeat center left;
+  background: url("../img/icons/eldorado_stroke/devices/002.png") no-repeat
+    center left;
 }
 
 .i_shop:hover {
-    background: url("../img/icons/eldorado_stroke/basic/046.png") no-repeat center left;
+  background: url("../img/icons/eldorado_stroke/basic/046.png") no-repeat center
+    left;
 }
 
 .bs_card:hover {
-    background: url("../img/icons/eldorado_stroke/basic/003.png") no-repeat center left;
+  background: url("../img/icons/eldorado_stroke/basic/003.png") no-repeat center
+    left;
 }
 
 .corporate:hover {
-    background: url("../img/icons/eldorado_stroke/finance/016.png") no-repeat center left;
+  background: url("../img/icons/eldorado_stroke/finance/016.png") no-repeat
+    center left;
 }
 
 /********Product Headings********/
@@ -342,156 +346,155 @@ p {
 .corporate,
 .i_shop,
 .landing {
-    padding: 0 50px;
-    margin-left: 20px;
-    clear: both;
-    font-size: 2rem;
-    padding-bottom: 20px;
+  padding: 0 50px;
+  margin-left: 20px;
+  clear: both;
+  font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 /********Price Boxes********/
 
 .price {
-    padding: 2%;
-    width: auto;
-    font-size: 2.5rem;
-    border: 2px solid #35c2f8;
-    border-radius: 10px;
+  padding: 2%;
+  width: auto;
+  font-size: 2.5rem;
+  border: 2px solid #35c2f8;
+  border-radius: 10px;
 }
 
 .price:hover {
-    background-color: #35c2f8;
-    color: #fff;
+  background-color: #35c2f8;
+  color: #fff;
 }
 
 /*********Team Section***********/
 
 #team_wrap {
-    min-height: 500px;
-    width: 100%;
-    text-align: center;
-    display: none;
+  min-height: 500px;
+  width: 100%;
+  text-align: center;
+  display: none;
 }
 
 .team {
-    width: 80%;
+  width: 80%;
 }
 
 .heading_team {
-    width: 100%;
-    text-transform: capitalize;
-    font-size: 5rem;
-    margin-top: 2%;
-    font-family: "Jura", sans-serif;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 5rem;
+  margin-top: 2%;
+  font-family: "Jura", sans-serif;
 }
 
 .team_cont {
-    width: 80%;
+  width: 80%;
 }
 
 .team_cont p {
-    display: block;
-    margin-top: 20px;
-    font-size: 2rem;
+  display: block;
+  margin-top: 20px;
+  font-size: 2rem;
 }
 
 .ak {
-    background: url("../img/ak_1.png") no-repeat center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    border: 2px solid #35c2f8;
+  background: url("../img/ak_1.png") no-repeat center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid #35c2f8;
 }
 
 .ny {
-    background: url("../img/ny.jpg") no-repeat center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    border: 2px solid #35c2f8;
+  background: url("../img/ny.jpg") no-repeat center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid #35c2f8;
 }
 
 .mk {
-    background: url("../img/mk_1.png") no-repeat center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    border: 2px solid #35c2f8;
+  background: url("../img/mk_1.png") no-repeat center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid #35c2f8;
 }
 
 .btm_line_team {
-    width: 80%;
-    text-align: center;
-    margin: 0 10% 0 10%;
-    font-size: 2rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 10% 0 10%;
+  font-size: 2rem;
 }
 
 /*********Contacts***********/
 
 #contact_wrap {
-    min-height: 200px;
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    text-align: center;
+  min-height: 200px;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
 }
 
 .cont_methods {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .contact_form {
-    width: 50%;
+  width: 50%;
 }
 
 .contact h1 {
-    font-size: 5rem;
-    padding-left: 50px;
+  font-size: 5rem;
+  padding-left: 50px;
 }
 
 .contact a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .mobile {
-    background: url("../img/mobile.png") no-repeat center;
-    background-size: cover;
-    height: 30px;
-    width: 18px;
-    display: inline-block;
-    position: relative;
-    top: 10px;
+  background: url("../img/mobile.png") no-repeat center;
+  background-size: cover;
+  height: 30px;
+  width: 18px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
 }
 
 .mail {
-    background: url("../img/mail.png") no-repeat center;
-    width: 27px;
-    height: 17px;
-    display: inline-block;
+  background: url("../img/mail.png") no-repeat center;
+  width: 27px;
+  height: 17px;
+  display: inline-block;
 }
 
 /*********Up Button***********/
 
 #toTop {
-    width: 35px;
-    background: #35c2f8;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    position: fixed;
-    bottom: 10px;
-    /* отступ кнопки от нижнего края страницы*/
-    left: 10px;
-    cursor: pointer;
-    display: none;
-    color: #fff;
-    font-family: serif;
-    font-size: 1.7rem;
-    border-radius: 100%;
+  width: 35px;
+  background: #35c2f8;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  /* отступ кнопки от нижнего края страницы*/
+  left: 10px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-family: serif;
+  font-size: 1.7rem;
+  border-radius: 100%;
 }
-
